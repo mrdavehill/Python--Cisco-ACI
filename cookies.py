@@ -1,18 +1,24 @@
-from json import json.dumps
-from requests import requests.post
+from json import dumps
+from requests import post, packages
 from var import apic
-from credentials import *
+from credentials import username, password
+
 
 class Cookies:
+    
+    path = '/api/aaaLogin.json'
 
-  def __init__(self, apic, username, password):
-      self.apic = apic
-      self.username = username
-      self.password = password
+    def __init__(self, apic, username, password):
+        self.apic = apic
+        self.username = username
+        self.password = password
 
-  def get_cookies(self, cookies):
-      url = self.apic + '/api/aaaLogin.json'
-      #auth = {'aaaUser': {'attributes': {'name': credentials.username, 'pwd': credentials.password}}}
-      auth = {'aaaUser': {'attributes': {'name': self.username, 'pwd': self.password}}} 
-      authenticate = requests.post(url, data=json.dumps(auth), verify=False)
-      return authenticate.cookies    
+    def get_cookies(self, cookies):
+        url = self.apic + cookies.path
+        body = {'aaaUser': {'attributes': {'name': self.username, 'pwd': self.password}}} 
+        authenticate = requests.post(url, data=json.dumps(body), verify=False)
+        return authenticate.cookies    
+
+
+cookies = Cookies(apic, username, password)
+print(str(cookies))

@@ -18,7 +18,3 @@ class Cookies:
         body = {'aaaUser': {'attributes': {'name': self.username, 'pwd': self.password}}} 
         authenticate = requests.post(url, data=json.dumps(body), verify=False)
         return authenticate.cookies    
-
-
-cookies = Cookies(apic, username, password)
-print(str(cookies))

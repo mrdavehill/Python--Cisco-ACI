@@ -10,8 +10,9 @@ class Cookies:
       self.username = username
       self.password = password
 
-  def get_cookies(self):
-      url = apic + '/api/aaaLogin.json'
-      auth = {'aaaUser': {'attributes': {'name': credentials.username, 'pwd': credentials.password}}}
+  def get_cookies(self, cookies):
+      url = self.apic + '/api/aaaLogin.json'
+      #auth = {'aaaUser': {'attributes': {'name': credentials.username, 'pwd': credentials.password}}}
+      auth = {'aaaUser': {'attributes': {'name': self.username, 'pwd': self.password}}} 
       authenticate = requests.post(url, data=json.dumps(auth), verify=False)
       return authenticate.cookies    

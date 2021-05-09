@@ -37,8 +37,9 @@ if __name__ == '__main__':
     now = str(datetime.now().isoformat(timespec='minutes'))
     #cookies = Cookies(apic,)
     cookies = get_cookies('admin', 'ciscopsdt')
+    # change to tenant_id = 'tenant'
     tenant_name = 'tenant'
-    descr = 'unittest--' + str(now)
+    descr = 'manual-test--' + str(now)
 
     tenant = Tenant(apic, tenant_name, descr)
     #pprint.pprint(tenant.payload.__dict__)

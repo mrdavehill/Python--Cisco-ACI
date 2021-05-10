@@ -3,9 +3,8 @@
 # dependencies: none
 # created 9-may-2021
 
-from datetime import datetime
-now = str(datetime.now())
-unique_name = 'test--' + str(now)
+import random
+unique_name = 'test--' + str(random.randint(0,9999999))
 
 apic = 'https://sandboxapicdc.cisco.com'
 username = 'admin'
@@ -13,5 +12,6 @@ password = 'ciscopsdt'
 ref_id = unique_name
 tenant_id = unique_name
 descr_id = unique_name
+vrf_id = unique_name
 
 

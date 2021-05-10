@@ -1,6 +1,6 @@
 # python3.8.4
-# inputs: host and change reference number
-# dependencies: none
+# inputs: host and unique reference
+# dependencies: getCookies.py
 # created 9-may-2021
 
 

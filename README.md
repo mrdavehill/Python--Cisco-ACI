@@ -2,7 +2,7 @@
 
 On this page:
 
-unittest - clone repo and run 'python3 -m unittest discover -v'
+test_deployment.py (unittest) - clone repo and run 'python3 -m unittest discover -v'
  
 ## Use Case Description
 

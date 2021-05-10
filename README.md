@@ -2,7 +2,7 @@
 
 On this page:
 
-test_deployment.py (unittest) - clone repo and run 'python3 -m unittest discover -v'
+test_deployment.py (unittest) - clone repo and run 'python3 -m unittest discover -v' and it will install all the classes in classes/APIC4_1_1k on a DevNet sandbox APIC.
  
 ## Use Case Description
 

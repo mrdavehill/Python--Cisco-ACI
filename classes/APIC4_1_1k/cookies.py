@@ -9,7 +9,7 @@ class Cookies:
         self.apic = apic
         self.username = username
         self.password = password
-        self.payload = {'aaaUser': {'attributes': {'name': self.name, 'pwd': self.password}}} 
+        self.payload = {'aaaUser': {'attributes': {'name': self.username, 'pwd': self.password}}} 
 
     def __str__(self):
         return self.apic + '/api/aaaLogin.json'

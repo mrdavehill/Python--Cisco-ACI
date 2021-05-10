@@ -8,6 +8,9 @@ now = str(datetime.now())
 unique_name = 'test--' + str(now)
 
 apic = 'https://sandboxapicdc.cisco.com'
+username = 'admin'
+password = 'ciscopsdt'
+ref_id = unique_name
 tenant_id = unique_name
 descr_id = unique_name
 

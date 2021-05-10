@@ -5,7 +5,6 @@
 
 import unittest
 from getCookies import getCookies
-from create import create
 import requests
 from requests.packages import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -17,32 +16,38 @@ from var import descr_id
 from var import username
 from var import password
 from var import ref_id
+from var import vrf_id
 from cookies import Cookies
 from snapshot import Snapshot
 from tenant import Tenant
 from post import Post
+from vrf import Vrf
 import json
 import pprint
+from run import run
 
 
 class apicDeploy(unittest.TestCase):
 
     def setUp(self):
         data = Cookies(apic, username, password)
-        run = requests.post(data, data=json.dumps(data.payload), verify=False)
-        self.cookies = run.cookies
+        push  = requests.post(data, data=json.dumps(data.payload), verify=False)
+        self.cookies = push.cookies
 
     def test_createSnapshot(self):
         data = Snapshot(apic, ref_id)
-        run = requests.post(data, data=json.dumps(data.payload), verify=False, cookies=self.cookies)
-        self.assertEqual(run.status_code, 200)
+        push = run(data, data.payload, self.cookies)
+        self.assertEqual(push, 200)
 
     def test_deployTenant(self):
         data = Tenant(apic, tenant_id, descr_id)
-        run = requests.post(data, data=json.dumps(data.payload), verify=False, cookies=self.cookies)
-        self.assertEqual(run.status_code, 200)
+        push = run(data, data.payload, self.cookies)
+        self.assertEqual(push, 200)
 
-
+    def test_deployVrf(self):
+        data = Vrf(apic, tenant_id, vrf_id, descr_id)
+        push = run(data, data.payload, self.cookies)
+        self.assertEqual(push, 200)
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,7 +1,7 @@
-#python3.8.4
-#Cisco Application Policy Infrastructure Controller Version: 4.1(1k)
-#inputs: url, tenant and description
-#created 9-may-2021
+# python3.8.4
+# Cisco Application Policy Infrastructure Controller Version: 4.1(1k)
+# inputs: url, tenant and description
+# created 9-may-2021
 
 class Tenant:
 

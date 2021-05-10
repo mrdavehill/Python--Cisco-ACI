@@ -1,6 +1,8 @@
 # Python--Cisco-ACI
 
-Python scripts to create Cisco ACI objects
+On this page:
+
+unittest - clone repo and run 'python3 -m unittest discover -v'
  
 ## Use Case Description
 

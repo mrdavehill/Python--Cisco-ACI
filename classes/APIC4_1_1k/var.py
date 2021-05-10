@@ -4,7 +4,7 @@
 # created 9-may-2021
 
 import random
-unique_name = 'test--' + str(random.randint(0,9999999))
+unique_name = 'unittest--' + str(random.randint(0,999))
 
 apic = 'https://sandboxapicdc.cisco.com'
 username = 'admin'

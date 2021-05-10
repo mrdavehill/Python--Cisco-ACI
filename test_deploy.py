@@ -4,7 +4,6 @@
 # created 9-may-2021
 
 import unittest
-from getCookies import getCookies
 import requests
 from requests.packages import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -20,7 +19,6 @@ from var import vrf_id
 from cookies import Cookies
 from snapshot import Snapshot
 from tenant import Tenant
-from post import Post
 from vrf import Vrf
 import json
 import pprint

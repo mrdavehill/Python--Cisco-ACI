@@ -1,5 +1,4 @@
 # python3.8.4
-# Cisco Application Policy Infrastructure Controller Version: 4.1(1k)
 # inputs: host, username and password
 # created 10-may-2021
 

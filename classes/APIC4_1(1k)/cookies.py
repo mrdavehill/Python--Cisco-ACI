@@ -1,5 +1,6 @@
 # python3.8.4
 # inputs: host, username and password
+# dependencies: none
 # created 10-may-2021
 
 class Cookies:

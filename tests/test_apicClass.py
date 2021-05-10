@@ -5,14 +5,13 @@ import unittest
 
 class apicClass(unittest.TestCase):
 
-    def test_apicClassJSON(self):
-        # valid dictionary ready for JSON serialisation
+    def test_apicClassDICT(self):
+        # is type DICT
         pass
 
-    def test_apicClassURL(self):
-        # valid url
+    def test_apicClassSTR(self):
+        # is string
         pass
-
 
 if __name__ == '__main__':
     unittest.main()

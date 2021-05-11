@@ -3,13 +3,13 @@
 # dependencies: none
 # created 9-may-2021
 
+import time
 import unittest
 import requests
 from classes.v411k import *
 from classes.v411k.var import *
 import json
-from actions import write as w, read as r, change as c, destroy as d
-
+from actions import write as w, read as r, destroy as d
 
 class apicDeploy(unittest.TestCase):
 
@@ -42,11 +42,13 @@ class apicDeploy(unittest.TestCase):
         data = vrf.Vrf(apic, tenant_id, vrf_id, descr_id)
         push = r(data, data.payload, self.cookies)
         self.assertEqual(push, 200)
+    
+    def test_deployBridge_domain(self):
+        time.sleep(10)
+        data = bridge_domain.Bridge_domain(apic, tenant_id, bridge_domain_id, subnet_a, vrf_id, descr_id)
+        push = w(data, data.payload, self.cookies)
+        self.assertEqual(push, 200)
 
-    def test_updateTenant(self):
-        data = tenant.Tenant(apic, tenant_id, descr_id_change)
-        push = c(data, data.payload, self.cookies)
-        self.assertEqual(push, 200) 
 
 if __name__ == '__main__':
     unittest.main()

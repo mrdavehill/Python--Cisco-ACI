@@ -8,6 +8,7 @@ from var import *
 from cookies import Cookies
 from snapshot import Snapshot
 from tenant import Tenant
+from bridge_domain import Bridge_domain
 from vrf import Vrf
 
 
@@ -28,6 +29,10 @@ class apicClass(unittest.TestCase):
     def test_apicClassVRF(self):
         vrf = Vrf(apic, tenant_id, vrf_id, descr_id)
         self.assertTrue(isinstance(vrf.payload, dict))
+
+    def test_apicClassBridge_domain(self):
+        bridge_domain = Bridge_domain(apic, tenant_id, bridge_domain_id, subnet_a, vrf_id, descr_id)
+        self.assertTrue(isinstance(bridge_domain.payload, dict))
 
 if __name__ == '__main__':
     unittest.main()

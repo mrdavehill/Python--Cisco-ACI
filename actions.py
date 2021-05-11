@@ -13,14 +13,8 @@ def read(url, data, cookies):
     return x
 
 def write(url, data, cookies):
-#def write(**kwargs):
     write = requests.post(url, data=json.dumps(data), verify=False, cookies=cookies)
     x = write.status_code
-    return x
-
-def change(url, data, cookies):
-    change = requests.put(url, data=json.dumps(data), verify=False, cookies=cookies)
-    x = change.status_code
     return x
 
 def destroy(url, data, cookies):

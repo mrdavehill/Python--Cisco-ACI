@@ -10,9 +10,10 @@ apic = 'https://sandboxapicdc.cisco.com'
 username = 'admin'
 password = 'ciscopsdt'
 ref_id = unique_name
-tenant_id = unique_name
 descr_id = unique_name
-descr_id_change = 'unittest-update'
+tenant_id = unique_name
 vrf_id = unique_name
+bridge_domain_id = unique_name
+subnet_a = '10.255.255.1/24'
 
 

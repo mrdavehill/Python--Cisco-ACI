@@ -6,4 +6,4 @@ install:
   - pip install -r requirements.txt
 # command to run tests
 script:
-  - pyhon3 -m unittest discover -v
+  - unittest

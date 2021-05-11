@@ -12,6 +12,7 @@ password = 'ciscopsdt'
 ref_id = unique_name
 tenant_id = unique_name
 descr_id = unique_name
+descr_id_change = 'unittest-update'
 vrf_id = unique_name
 
 

@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # python3.8.4
 # inputs: host, payload and cookies
 # dependencies: getCookies.py

@@ -1,12 +1,12 @@
-# Python--Cisco-ACI
+# Python--Cisco-ACI/classes/v411k
 
 On this page:
 
-.travis.yml - config file for Travis CI test automation (runs test_pytestDeploy.py on git push)
+Cisco aci objects as python classes
 
-requirements.txt - list required extra python libraries
+test_apicClass.py - unittest unit test - instantiates each class with supplied variables and tests dictionary formatting
 
-test_pytestDeploy.py - pytest integration test that will install all the classes in classes/APIC4_1_1k on a DevNet sandbox APIC in dependant order
+var.py - variables used by test_apicClass.py and test_pytestDeploy.py
  
 ## Use Case Description
 

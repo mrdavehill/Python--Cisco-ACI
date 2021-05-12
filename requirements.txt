@@ -1,4 +1,4 @@
-pip3 -r install unittest
-pip3 -r install requests
-pip3 -r install json
-pip3 -r install pytest
+#!/usr/bin/python3
+pip -r install requests
+pip -r install json
+pip -r install pytest

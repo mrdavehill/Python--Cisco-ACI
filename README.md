@@ -4,7 +4,7 @@ On this page:
 
 .travis.yml - config file for Travis CI test automation (runs test_pytestDeploy.py on git push)
 
-requirements.txt - list required extra python libraries
+requirements.txt - lists the required extra python libraries
 
 test_pytestDeploy.py - pytest integration test that will install all the classes in classes/APIC4_1_1k on a DevNet sandbox APIC in dependant order
  

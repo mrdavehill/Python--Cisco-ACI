@@ -1,3 +1,7 @@
-#!/usr/bin/python3
-requests
-pytest
+# python3.8.4
+# inputs: none
+# dependencies: none
+# created 11-may-2021
+
+pytest==6.2.4
+requests==2.24.0

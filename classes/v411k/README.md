@@ -1,4 +1,4 @@
-# Python--Cisco-ACI/classes/v411k
+# Python--Cisco-ACI/classes/v411k -- Application Policy Infrastructure Controller Version: 4.1(1k)
 
 On this page:
 
@@ -26,7 +26,7 @@ git clone https://github.com/mrdavehill/Python--Cisco-ACI.git
 
 python3 -m pytest -s test_pytestDeploy.py
 
-visit DevNet Sandbox and look for tenant 'python3--' + str(random.randint(0,999))
+visit DevNet Sandbox and look for tenant "'python3--' + str(random.randint(0,999))"
 
 ## Getting help
 

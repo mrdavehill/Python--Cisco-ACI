@@ -2,6 +2,8 @@
 
 On this page:
 
+classes/v411k - Cisco aci objects as python classes for Version: 4.1(1k)
+
 .travis.yml - config file for Travis CI test automation (runs test_pytestDeploy.py on git push)
 
 requirements.txt - lists the required extra python libraries
@@ -26,7 +28,7 @@ git clone https://github.com/mrdavehill/Python--Cisco-ACI.git
 
 python3 -m pytest -s test_pytestDeploy.py
 
-visit DevNet Sandbox and look for tenant 'python3--' + str(random.randint(0,999))
+visit DevNet Sandbox and look for tenant "'python3--' + str(random.randint(0,999))"
 
 ## Getting help
 

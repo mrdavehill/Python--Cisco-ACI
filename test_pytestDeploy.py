@@ -1,7 +1,7 @@
 # python3.8.4
-# inputs: var.py
-# dependencies: none
-# created 9-may-2021
+# inputs: everything
+# dependencies: all
+# created 11-may-2021
 
 import pytest
 import requests
@@ -46,6 +46,3 @@ def test_deployBridge_domain(get_cookies):
     data = bridge_domain.Bridge_domain(apic, tenant_id, bridge_domain_id, subnet_a, vrf_id, descr_id)
     push = requests.post(data, data=json.dumps(data.payload), verify=False, cookies=get_cookies)
     assert push.status_code == 200
-
-if __name__ == '__main__':
-    unittest.main()

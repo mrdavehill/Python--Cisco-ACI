@@ -1,4 +1,3 @@
 #!/usr/bin/python3
-pip -r install requests
-pip -r install json
-pip -r install pytest
+pip install requests
+pip install pytest

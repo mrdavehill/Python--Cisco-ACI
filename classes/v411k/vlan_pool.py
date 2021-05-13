@@ -1,7 +1,7 @@
 # python3.8.4
-# inputs: host, tenant and description
+# inputs: host, vlan pool name, first vlan number, last vlan number - if it's a single vlan use it for first and last -  and description
 # dependencies: none
-# created 12-may-2021
+# created 13-may-2021
 
 class Vlan_pool:
 

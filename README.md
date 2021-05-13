@@ -2,7 +2,7 @@
 
 On this page:
 
-classes/v411k - Cisco aci objects as python classes for Version: 4.1(1k)
+classes/v411k - Cisco ACI objects as python classes for Version: 4.1(1k)
 
 .travis.yml - config file for Travis CI test automation (runs test_pytestDeploy.py on git push)
 

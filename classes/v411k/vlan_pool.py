@@ -16,13 +16,3 @@ class Vlan_pool:
 
     def __str__(self):
         return self.apic + f'/api/node/mo/uni/infra/vlanns-[{self.vlan_pool}]-static.json'
-'''
-{"fvnsVlanInstP":{"attributes":{"dn":"uni/infra/vlanns-[" + self.vlan_pool + "]-static","name":self.vlan_pool,"descr":self.descr,"rn":"vlanns-[" + self.vlan_pool + "]-static"},"children":[{"fvnsEncapBlk":{"attributes":{"dn":"uni/infra/vlanns-[XXXX]-static/from-[vlan-300]-to-[vlan-399]","from":"vlan-300","to":"vlan-399","rn":"from-[vlan-300]-to-[vlan-399]",}}}]}}
-
-
-
-method: POST
-url: https://sandboxapicdc.cisco.com
-payload{"fvnsVlanInstP":{"attributes":{"dn":"uni/infra/vlanns-[XXXX]-static","name":"XXXX","descr":"XXXXXX","rn":"vlanns-[XXXX]-static","status":"created"},"children":[{"fvnsEncapBlk":{"attributes":{"dn":"uni/infra/vlanns-[XXXX]-static/from-[vlan-300]-to-[vlan-399]","from":"vlan-300","to":"vlan-399","rn":"from-[vlan-300]-to-[vlan-399]","status":"created"},"children":[]}}]}}
-response: {"totalCount":"0","imdata":[]}
-'''

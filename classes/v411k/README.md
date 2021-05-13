@@ -1,4 +1,4 @@
-# Python--Cisco-ACI/classes/v411k -- Application Policy Infrastructure Controller Version: 4.1(1k)
+## Python--Cisco-ACI/classes/v411k -- Application Policy Infrastructure Controller Version: 4.1(1k)
 
 On this page:
 
@@ -8,9 +8,17 @@ test_apicClass.py - unittest unit test - instantiates each class with supplied v
 
 var.py - variables used by test_apicClass.py and test_pytestDeploy.py
  
-## Use Case Description
+### Use Case Description
 
-Creation and testing of Cisco aci objects in python and CI/CD practices
+Creation and testing of Cisco ACI objects in python and CI/CD practices
+
+### How to test the software
+
+git clone https://github.com/mrdavehill/Python--Cisco-ACI.git
+
+python3 -m pytest -s test_pytestDeploy.py
+
+visit DevNet Sandbox and look for tenant "'python3--' + str(random.randint(0,999))"
 
 ### DevNet Sandbox
 
@@ -20,20 +28,13 @@ username = 'admin'
 
 password = 'ciscopsdt'
 
-## How to test the software
-
-git clone https://github.com/mrdavehill/Python--Cisco-ACI.git
-
-python3 -m pytest -s test_pytestDeploy.py
-
-visit DevNet Sandbox and look for tenant "'python3--' + str(random.randint(0,999))"
-
-## Getting help
+### Getting help
 
 Hit me up if you have any issues.
 
-## Author(s)
+### Author
 
 This project was written and is maintained by the following individuals:
 
 * Dave Hill <dave@davehill.org>
+* https://www.linkedin.com/in/dave-hill-a5a3601b0/

@@ -10,6 +10,7 @@ from snapshot import Snapshot
 from tenant import Tenant
 from bridge_domain import Bridge_domain
 from vrf import Vrf
+from vlan_pool import Vlan_pool
 
 
 class apicClass(unittest.TestCase):
@@ -33,6 +34,10 @@ class apicClass(unittest.TestCase):
     def test_apicClassBridge_domain(self):
         bridge_domain = Bridge_domain(apic, tenant_id, bridge_domain_id, subnet_a, vrf_id, descr_id)
         self.assertTrue(isinstance(bridge_domain.payload, dict))
+
+    def test_apicVlan_pool(self):
+        vlan_pool = Vlan_pool(apic, vlan_pool_id, vlan_range_start, vlan_range_finish, descr_id)
+        self.assertTrue(isinstance(vlan_pool.payload, dict))
 
 if __name__ == '__main__':
     unittest.main()

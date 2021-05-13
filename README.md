@@ -1,4 +1,4 @@
-# Python--Cisco-ACI
+## Python--Cisco-ACI
 
 On this page:
 
@@ -10,9 +10,17 @@ requirements.txt - lists the required extra python libraries
 
 test_pytestDeploy.py - pytest integration test that will install all the classes in classes/APIC4_1_1k on a DevNet sandbox APIC in dependant order
  
-## Use Case Description
+### Use Case Description
 
-Creation and testing of Cisco aci objects in python and CI/CD practices
+Creation and testing of Cisco ACI objects in python and CI/CD practices
+
+### How to test the software
+
+git clone https://github.com/mrdavehill/Python--Cisco-ACI.git
+
+python3 -m pytest -s test_pytestDeploy.py
+
+visit DevNet Sandbox and look for tenant "'python3--' + str(random.randint(0,999))"
 
 ### DevNet Sandbox
 
@@ -22,20 +30,13 @@ username = 'admin'
 
 password = 'ciscopsdt'
 
-## How to test the software
-
-git clone https://github.com/mrdavehill/Python--Cisco-ACI.git
-
-python3 -m pytest -s test_pytestDeploy.py
-
-visit DevNet Sandbox and look for tenant "'python3--' + str(random.randint(0,999))"
-
-## Getting help
+### Getting help
 
 Hit me up if you have any issues.
 
-## Author(s)
+### Author
 
 This project was written and is maintained by the following individuals:
 
 * Dave Hill <dave@davehill.org>
+* https://www.linkedin.com/in/dave-hill-a5a3601b0/

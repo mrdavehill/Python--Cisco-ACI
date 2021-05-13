@@ -15,5 +15,8 @@ tenant_id = unique_name
 vrf_id = unique_name
 bridge_domain_id = unique_name
 subnet_a = '10.255.255.1/24'
+vlan_range_start = '300'
+vlan_range_finish = '399'
+vlan_pool_id = 'vlan_pool_' + unique_name
 
 

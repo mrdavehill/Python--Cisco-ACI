@@ -3,5 +3,6 @@ __all__ = [
     'tenant',
     'var',
     'vrf',
-    'bridge_domain'
+    'bridge_domain',
+    'vlan_pool'
 ]

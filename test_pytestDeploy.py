@@ -47,3 +47,8 @@ def test_deployBridge_domain(get_cookies):
     data = bridge_domain.Bridge_domain(apic, tenant_id, bridge_domain_id, subnet_a, vrf_id, descr_id)
     push = requests.post(data, data=json.dumps(data.payload), verify=False, cookies=get_cookies)
     assert push.status_code == 200
+
+def test_deployBridge_domain(get_cookies):
+    data = vlan_pool.Vlan_pool(apic, vlan_pool_id, vlan_range_start, vlan_range_finish, descr_id)
+    push = requests.post(data, data=json.dumps(data.payload), verify=False, cookies=get_cookies)
+    assert push.status_code == 200

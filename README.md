@@ -28,7 +28,7 @@ Cisco has an 'always on' APIC [here](https://sandboxapicdc.cisco.com/).
 
 username = 'admin'
 
-password = 'ciscopsdt'
+password = '!v3G@!4@Y'
 
 ### Getting help
 

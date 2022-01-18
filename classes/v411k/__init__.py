@@ -4,5 +4,6 @@ __all__ = [
     'var',
     'vrf',
     'bridge_domain',
-    'vlan_pool'
+    'vlan_pool',
+    'aaep'
 ]

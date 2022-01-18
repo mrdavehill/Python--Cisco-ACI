@@ -12,6 +12,7 @@ password = '!v3G@!4@Y'
 ref_id = unique_name
 descr_id = unique_name
 tenant_id = unique_name
+github = 'https://github.com/mrdavehill/Python--Cisco-ACI'
 vrf_id = unique_name
 bridge_domain_id = unique_name
 subnet_a = '10.255.255.1/24'

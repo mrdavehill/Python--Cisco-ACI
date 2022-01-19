@@ -1,4 +1,4 @@
-## Python--Cisco-ACI/classes/v411k -- Application Policy Infrastructure Controller Version: 4.1(1k)
+## Python--Cisco-ACI/classes/v411k -- Application Policy Infrastructure Controller Version: 5.2(1g)
 
 On this page:
 
@@ -26,7 +26,7 @@ Cisco has an 'always on' APIC [here](https://sandboxapicdc.cisco.com/).
 
 username = 'admin'
 
-password = 'ciscopsdt'
+password = '!v3G@!4@Y'
 
 ### Getting help
 

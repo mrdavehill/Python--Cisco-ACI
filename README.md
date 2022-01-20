@@ -10,7 +10,7 @@ classes/version_521g - Cisco ACI objects as python classes for Version: 5.2(1g)
 
 requirements.txt - lists the required extra python libraries
 
-test_pytestDeploy.py - pytest integration test that will install all the classes in classes/APIC4_1_1k on a DevNet sandbox APIC in dependant order
+test_pytestDeploy.py - pytest integration test that will install all the classes in classes/version_521g on a DevNet sandbox APIC in dependant order
  
 ### Use Case Description
 

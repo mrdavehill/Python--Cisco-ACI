@@ -7,8 +7,8 @@
 import pytest
 import requests
 requests.packages.urllib3.disable_warnings()
-from classes.v411k import *
-from classes.v411k.var import *
+from classes.version_521g import *
+from classes.version_521g.var import *
 import json
 
 @pytest.fixture(scope='session', autouse=True)

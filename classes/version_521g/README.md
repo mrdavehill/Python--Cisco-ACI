@@ -1,16 +1,12 @@
-## Python--Cisco-ACI
+## Python--Cisco-ACI/classes/v411k -- Application Policy Infrastructure Controller Version: 5.2(1g)
 
 On this page:
 
-classes/version_411k - Cisco ACI objects as python classes for Version: 4.1(1k) <-- depreciated
+Cisco aci objects as python classes
 
-classes/version_521g - Cisco ACI objects as python classes for Version: 5.2(1g)
+test_apicClass.py - unittest unit test - instantiates each class with supplied variables and tests dictionary formatting
 
-.travis.yml - config file for Travis CI test automation (runs test_pytestDeploy.py on git push)
-
-requirements.txt - lists the required extra python libraries
-
-test_pytestDeploy.py - pytest integration test that will install all the classes in classes/APIC4_1_1k on a DevNet sandbox APIC in dependant order
+var.py - variables used by test_apicClass.py and test_pytestDeploy.py
  
 ### Use Case Description
 

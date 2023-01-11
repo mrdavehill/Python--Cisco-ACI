@@ -14,7 +14,7 @@ test_pytestDeploy.py - pytest integration test that will install all the classes
  
 ### Use Case Description
 
-Creation and testing of Cisco ACI objects in python and CI/CD practices
+Creation and testing of Cisco ACI objects in python and CI/CD practices.
 
 ### How to test the software
 

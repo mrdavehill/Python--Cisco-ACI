@@ -1,12 +1,14 @@
 ## Python--Cisco-ACI
 
+### The 'Always On' sandbox has been down for a while but I've just checked and today 8/01/24 - it's back baby!
+
 On this page:
 
 classes/version_411k - Cisco ACI objects as python classes for Version: 4.1(1k) <-- depreciated
 
 classes/version_521g - Cisco ACI objects as python classes for Version: 5.2(1g)
 
-.travis.yml - config file for Travis CI test automation (runs test_pytestDeploy.py on git push)
+.travis.yml - config file for Travis CI test automation (runs test_pytestDeploy.py on any repo changes)
 
 requirements.txt - lists the required extra python libraries
 

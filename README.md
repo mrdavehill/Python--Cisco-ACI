@@ -1,6 +1,6 @@
 ## Python--Cisco-ACI
 
-### The 'Always On' sandbox has been down for a while but I've just checked and today 8/01/24 - it's back baby!
+The 'Always On' sandbox has been down for a while but it's back but with cert issues - it's not the best.
 
 On this page:
 

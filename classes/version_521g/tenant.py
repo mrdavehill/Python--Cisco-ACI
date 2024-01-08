@@ -12,4 +12,4 @@ class Tenant:
         self.payload = {"fvTenant":{"attributes":{"descr":self.descr,"dn":"uni/tn-" + self.tenant,"name":self.tenant,"rn":"tn-" + self.tenant}}}
 
     def __str__(self):
-        return self.apic + f'/api/node/mo/uni/tn-{self.tenant}.json?query-target=self'
+        return self.apic + f'/api/node/mo/uni/tn-{self.tenant}.json'
